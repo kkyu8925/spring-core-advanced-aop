@@ -1,15 +1,13 @@
 package hello.aop.internalcall;
 
 import lombok.extern.slf4j.Slf4j;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 /**
  * 참고: 생성자 주입은 순환 사이클을 만들기 때문에 실패한다.
  */
 @Slf4j
-@Component
+//@Component
 public class CallServiceV1 {
 
     private CallServiceV1 callServiceV1;
